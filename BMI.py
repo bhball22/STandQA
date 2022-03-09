@@ -74,3 +74,4 @@ BMI, category = BMICalculator(Weight, Height)
 
 ## Prints
 print("You are {} with a Body Mass Index (BMI) of {}".format(category, BMI))
+input("Press enter to exit.")
