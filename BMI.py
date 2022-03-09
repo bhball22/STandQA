@@ -2,16 +2,16 @@
 def CheckInput(Weight, Height):
     i = False
     j = False
-    while (i == False and j == False):
+    while (i == False or j == False):
         ## Weight
         if (i == False):
             try:
                 ValW = int(Weight)
-                i == True
+                i = True
             except ValueError:
                 try:
                     ValW = float(Weight)
-                    i == True
+                    i = True
                 except ValueError:
                     Weight = input("Your value type is not valid for your Weight, please input a number. (WEIGHT): ")
         
